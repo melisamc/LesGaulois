@@ -1,11 +1,15 @@
 package personnages;
 
+import objets.Equipement;
 import village_gaulois.Village;
+
 public class Gaulois {
 	private String nom;
-	private int force;
+	//private int force;
 	private int effetPotion = 1;
 	private Village village;
+	private int force, nb_trophees;
+	private Equipement trophees[] = new Equipement[100];
 	
 	public Gaulois(String nom, int force) {
 		this.nom = nom;
